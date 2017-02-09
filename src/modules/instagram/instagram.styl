@@ -1,0 +1,34 @@
+.wrapper
+  text-align: center
+  margin: em(2) 0
+
+.content
+  display: block
+  cursor: pointer
+  border-top: 1px solid $grey
+  border-bottom: 1px solid $grey
+  padding: em(1.5) 0
+  font-size: 1.1em
+  text-transform: uppercase
+  transition: all .1s ease-out
+
+  &:hover
+    opacity: .7
+
+  @media (max-width: $breakpoint-lg - 1)
+    padding: em(.5) 0
+
+  &:before
+    content: ''
+    display: inline-block
+    vertical-align: middle
+    background: url(modules/instagram/sprite-instagram.png)
+    margin-right: em(1)
+
+.text
+  display: inline-block
+  vertical-align: middle
+
+  @media (max-width: $breakpoint-lg - 1)
+    display: block
+    margin-top: em(1)
